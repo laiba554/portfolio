@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -55,7 +57,8 @@
         <div class="hero-bg" style="background-image: url('assets/images/hero_bg_1773578414674.png');"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-container">
-            <div class="hero-content reveal">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 hero-content reveal">
                 <h2 class="hero-subtitle">Your Trusted & Authorized HP Partner</h2>
                 <h1 class="hero-title">Empowering Your IT Infrastructure</h1>
                 <p class="hero-description">
@@ -65,6 +68,7 @@
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
                     <!-- <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a> -->
+                </div>
                 </div>
             </div>
         </div>
@@ -104,7 +108,8 @@
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container about-container">
-            <div class="about-text reveal-left">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 about-text reveal-left">
                 <h3 class="section-subtitle">About Us</h3>
                 <h2 class="section-title">Your Trusted & Authentic HP Partner in Karachi</h2>
                 <div class="about-content">
@@ -123,15 +128,18 @@
                     <a href="#services" class="btn btn-secondary">Explore Our Services</a>
                 </div>
             </div>
-            <div class="about-image-wrapper reveal-right">
+                <div class="col-lg-6 about-image-wrapper reveal-right">
                 <div class="about-image">
-                    <img src="assets/images/about_office_1773578440281.png" alt="Professional IT Office Environment">
+                    <img src="assets/images/about_office_1773578440281.png" alt="Professional IT Office Environment" class="img-fluid">
                     <div class="experience-badge">
                         <span class="badge-num">10+</span>
                         <span class="badge-text">Years of<br>Excellence</span>
                     </div>
-                </div>
             </div>
+        </div>
+                </div>
+
+                </div>
         </div>
     </section>
 
@@ -144,42 +152,54 @@
                 <p class="section-desc">We offer end-to-end technology solutions tailored to meet the demands of modern corporate environments and institutions.</p>
             </div>
             
-            <div class="services-grid">
+            <div class="row g-4 services-grid">
                 <!-- Service 1 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
                     <h4 class="service-title">Desktop Computers Supply</h4>
                     <p class="service-desc">Providing high-performance workstations and enterprise-grade desktop computers for seamless operations.</p>
                 </div>
+                </div>
                 <!-- Service 2 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <h4 class="service-title">Laptops (New)</h4>
                     <p class="service-desc">A wide range of premium business laptops from top brands, tailored to your budget and processing needs.</p>
                 </div>
+                </div>
                 <!-- Service 3 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-memory"></i></div>
                     <h4 class="service-title">RAM / SSD / Storage</h4>
                     <p class="service-desc">Upgrade your systems with high-speed SSDs, enterprise HDDs, and high-capacity RAM modules.</p>
                 </div>
+                </div>
                 <!-- Service 4 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
                     <h4 class="service-title">Networking Solutions</h4>
                     <p class="service-desc">Complete networking setups including switches, routers, and structured cabling for fast connectivity.</p>
                 </div>
+                </div>
                 <!-- Service 5 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-print"></i></div>
                     <h4 class="service-title">Printers & Accessories</h4>
                     <p class="service-desc">High-volume laser printers, multi-function scanners, and essential IT accessories for office management.</p>
                 </div>
+                </div>
                 <!-- Service 6 -->
-                <div class="service-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="service-card reveal h-100">
                     <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
                     <h4 class="service-title">Bulk IT Supply</h4>
                     <p class="service-desc">Specialized in bulk procurement of IT hardware for schools, hospitals, and software houses.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -194,12 +214,13 @@
                 <p class="section-desc">Explore our extensive range of specialized hardware designed for modern business environments.</p>
             </div>
 
-            <div class="catalog-grid">
+            <div class="row g-4 catalog-grid">
                 
                 <!-- Category: Desktop Computers -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&q=80" alt="Desktop Computers">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=800&q=80" alt="Desktop Computers" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Desktop Computers</h3>
                         </div>
@@ -217,11 +238,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category: Laptops -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80" alt="Business Laptops">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80" alt="Business Laptops" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Business Laptops</h3>
                         </div>
@@ -237,11 +260,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 1: Mouse -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="assets/images/cat_mouse_1773578476965.png" alt="Computer Mouse Catalog">
+                        <img src="assets/images/cat_mouse_1773578476965.png" alt="Computer Mouse Catalog" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Mouse Collection</h3>
                         </div>
@@ -256,11 +281,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 2: Keyboard -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="assets/images/cat_keyboard_1773578720673.png" alt="Computer Keyboards">
+                        <img src="assets/images/cat_keyboard_1773578720673.png" alt="Computer Keyboards" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Keyboard Collection</h3>
                         </div>
@@ -273,11 +300,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 3: SSDs -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="assets/images/cat_ssd_1773578873916.png" alt="SSD Storage">
+                        <img src="assets/images/cat_ssd_1773578873916.png" alt="SSD Storage" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Storage & SSDs</h3>
                         </div>
@@ -293,11 +322,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 4: LED Monitors -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80" alt="LED Monitors">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80" alt="LED Monitors" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">LED Monitors</h3>
                         </div>
@@ -312,11 +343,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 5: Printers -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=800&q=80" alt="Enterprise Printers">
+                        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=800&q=80" alt="Enterprise Printers" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Enterprise Printers</h3>
                         </div>
@@ -332,11 +365,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
                 <!-- Category 6: Scanners -->
-                <div class="catalog-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="catalog-card reveal h-100">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&q=80" alt="Office Scanners">
+                        <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&q=80" alt="Office Scanners" class="img-fluid">
                         <div class="catalog-overlay">
                             <h3 class="overlay-title">Office Scanners</h3>
                         </div>
@@ -351,8 +386,9 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
-            </div>
+                </div>
         </div>
     </section>
 
@@ -364,59 +400,75 @@
                 <h2 class="section-title">The Jawad Business Systems Advantage</h2>
             </div>
             
-            <div class="features-grid">
-                <div class="feature-item reveal">
+            <div class="row g-4 features-grid">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h4>Genuine Products</h4>
                     <p>We source authentic hardware directly from authorized distributors.</p>
                 </div>
-                <div class="feature-item reveal">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
                     <h4>Best Prices</h4>
                     <p>Competitive and highly affordable pricing for B2B and institutional buyers.</p>
                 </div>
-                <div class="feature-item reveal">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
                     <h4>Fast Delivery</h4>
                     <p>Swift order processing and rapid delivery across Karachi.</p>
                 </div>
-                <div class="feature-item reveal">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
                     <h4>Bulk Supply Available</h4>
                     <p>Fully equipped to handle massive orders for large-scale IT deployments.</p>
                 </div>
-                <div class="feature-item reveal">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
                     <h4>Professional Support</h4>
                     <p>Dedicated post-sales technical support for smooth equipment operation.</p>
                 </div>
-                <div class="feature-item reveal">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="feature-item reveal h-100">
                     <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
                     <h4>Trusted IT & HP Partner</h4>
                     <p>Delivering genuine HP products with years of unblemished track record serving premium enterprises.</p>
                 </div>
-            </div>
+                </div>
+                        </div>
+                        </div>
+                </div>
         </div>
     </section>
 
     <!-- Stats Section -->
     <section id="clients" class="section stats">
-        <div class="container stats-container">
-            <div class="stat-item reveal">
+        <div class="container">
+            <div class="row g-4 stats-container text-center">
+            <div class="col-lg-3 col-md-6 col-6 stat-item reveal">
                 <h2 class="stat-number" data-target="22">0</h2>
                 <p class="stat-text">Years of Experience</p>
             </div>
-            <div class="stat-item reveal">
+            <div class="col-lg-3 col-md-6 col-6 stat-item reveal">
                 <h2 class="stat-number" data-target="25000">0</h2>
                 <p class="stat-text">Devices Supplied</p>
             </div>
-            <div class="stat-item reveal">
+            <div class="col-lg-3 col-md-6 col-6 stat-item reveal">
                 <h2 class="stat-number" data-target="20">0</h2>
                 <p class="stat-text">Clients</p>
             </div>
-            <div class="stat-item reveal">
+            <div class="col-lg-3 col-md-6 col-6 stat-item reveal">
                 <h2 class="stat-number" data-target="1500">0</h2>
                 <p class="stat-text">Projects Completed</p>
+            </div>
             </div>
         </div>
     </section>
@@ -430,73 +482,79 @@
                 <p class="section-desc">We supply leading hospitals, schools, and software houses with top-notch infrastructure.</p>
             </div>
 
-            <div class="projects-grid">
+            <div class="row g-4 projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="project-card reveal h-100">
                     <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Corporate Office Setup" class="placeholder-img" style="object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Corporate Office Setup" class="placeholder-img img-fluid" style="object-fit: cover;">
                     </div>
                     <div class="project-info">
                         <h4>Corporate Office Setup</h4>
                         <p>End-to-end IT infrastructure deployment for a leading local software house.</p>
                     </div>
                 </div>
+                </div>
                 <!-- Project 2 -->
-                <div class="project-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="project-card reveal h-100">
                     <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80" alt="University Computer Lab" class="placeholder-img" style="object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80" alt="University Computer Lab" class="placeholder-img img-fluid" style="object-fit: cover;">
                     </div>
                     <div class="project-info">
                         <h4>University Computer Lab</h4>
                         <p>Supplied 200+ high-end desktop configurations for an engineering institute.</p>
                     </div>
                 </div>
+                </div>
                 <!-- Project 3 -->
-                <div class="project-card reveal">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="project-card reveal h-100">
                     <div class="project-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Enterprise Networking" class="placeholder-img" style="object-fit: cover;">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Enterprise Networking" class="placeholder-img img-fluid" style="object-fit: cover;">
                     </div>
                     <div class="project-info">
                         <h4>Enterprise Networking</h4>
                         <p>Complete LAN structuring and switch installation for a hospital.</p>
                     </div>
                 </div>
-            </div>
+                        </div>
+                        </div>
+                </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact bg-light">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info-block reveal-left">
+            <div class="row g-0 contact-wrapper shadow-none">
+                <div class="col-12 contact-info-block reveal-left rounded shadow-sm">
                     <h3 class="section-subtitle">Get In Touch</h3>
                     <h2 class="section-title">Let's Discuss Your IT Needs</h2>
                     <p class="contact-desc">Ready to upgrade your business infrastructure? Reach out to us today for customized IT hardware solutions tailored to your requirements.</p>
                     
-                    <div class="contact-methods">
-                        <div class="contact-method">
+                    <div class="row g-4 contact-methods">
+                        <div class="col-lg-6 col-md-6 col-12 contact-method">
                             <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="method-details">
                                 <h4>Find Us</h4>
                                 <p>Karachi, Pakistan</p>
                             </div>
                         </div>
-                        <div class="contact-method">
+                        <div class="col-lg-6 col-md-6 col-12 contact-method">
                             <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
                             <div class="method-details">
                                 <h4>Call Us</h4>
                                 <p>+92 3213982693</p>
                             </div>
                         </div>
-                        <div class="contact-method">
+                        <div class="col-lg-6 col-md-6 col-12 contact-method">
                             <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div class="method-details">
                                 <h4>WhatsApp</h4>
                                 <p>+92 3213982693</p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
 
@@ -527,8 +585,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-col brand-col">
+        <div class="container">
+            <div class="row g-4 footer-container">
+            <div class="col-lg-4 col-md-6 col-12 footer-col brand-col">
                 <a href="#" class="logo footer-logo">
                     <span class="logo-icon"><i class="fa-solid fa-server"></i></span>
                     <span class="logo-text">Jawad<span class="logo-highlight"> BusinessSystems</span></span>
@@ -541,7 +600,7 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div> -->
             </div>
-            <div class="footer-col links-col">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-col links-col">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -551,7 +610,7 @@
                     <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
-            <div class="footer-col links-col">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-col links-col">
                 <h4>Our Services</h4>
                 <ul>
                     <li><a href="#">Desktop Solutions</a></li>
@@ -561,12 +620,13 @@
                     <li><a href="#">IT Support</a></li>
                 </ul>
             </div>
-            <div class="footer-col contact-col">
+            <div class="col-lg-4 col-md-6 col-12 footer-col contact-col">
                 <h4>Contact Info</h4>
                 <ul class="footer-contact-info">
                     <li><i class="fa-solid fa-map-pin"></i> Karachi, Pakistan</li>
                     <li><i class="fa-solid fa-phone"></i> +92 3213982693</li>
                 </ul>
+            </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -578,5 +638,7 @@
 
     <!-- Custom JS -->
     <script src="main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

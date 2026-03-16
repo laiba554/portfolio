@@ -57,11 +57,7 @@ ul {
     list-style: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 .section {
     padding: 100px 0;
@@ -443,14 +439,8 @@ ul {
 .about {
     overflow: hidden;
 }
-.about-container {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-.about-text {
-    flex: 1;
-}
+
+
 .about-content p {
     margin-bottom: 20px;
     font-size: 1.1rem;
@@ -468,10 +458,7 @@ ul {
 .about-list i {
     color: var(--accent-color);
 }
-.about-image-wrapper {
-    flex: 1;
-    position: relative;
-}
+
 .about-image {
     position: relative;
     border-radius: var(--border-radius);
@@ -529,11 +516,7 @@ ul {
 }
 
 /* --- Services Section --- */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
+
 .service-card {
     background: #fff;
     padding: 40px 30px;
@@ -588,11 +571,7 @@ ul {
 .hardware-catalog {
     background: var(--bg-dark);
 }
-.catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-}
+
 .catalog-card {
     background: var(--bg-card);
     border-radius: var(--border-radius);
@@ -673,11 +652,7 @@ ul {
 }
 
 /* --- Features (Why Choose Us) --- */
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
+
 .feature-item {
     text-align: center;
     padding: 30px;
@@ -723,12 +698,7 @@ ul {
     border-top: 1px solid var(--glass-border);
     border-bottom: 1px solid var(--glass-border);
 }
-.stats-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    text-align: center;
-}
+
 .stat-item {
     padding: 20px;
 }
@@ -749,11 +719,7 @@ ul {
 .projects {
     background: var(--bg-dark);
 }
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
+
 .project-card {
     background: var(--bg-card);
     border-radius: var(--border-radius);
@@ -796,15 +762,9 @@ ul {
 
 /* --- Contact Section --- */
 .contact-wrapper {
-    display: flex;
-    gap: 60px;
-    background: #fff;
-    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--shadow-light);
 }
 .contact-info-block {
-    flex: 1;
     background: var(--primary-color);
     color: #fff;
     padding: 60px;
@@ -820,11 +780,7 @@ ul {
     color: var(--text-muted);
     margin-bottom: 40px;
 }
-.contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 .contact-method {
     display: flex;
     align-items: flex-start;
@@ -891,9 +847,6 @@ ul {
     color: var(--text-muted);
 }
 .footer-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 40px;
     margin-bottom: 60px;
 }
 .footer-col h4 {
@@ -996,13 +949,7 @@ ul {
 }
 
 /* --- Responsive Layout --- */
-@media (max-width: 1024px) {
-    .about-container { flex-direction: column; }
-    .about-image-wrapper { margin-top: 50px; }
-    .experience-badge { bottom: 20px; left: 20px; }
-    .contact-wrapper { flex-direction: column; }
-    .footer-container { grid-template-columns: 1fr 1fr; }
-}
+
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
